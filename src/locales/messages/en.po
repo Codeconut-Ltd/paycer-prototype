@@ -186,7 +186,7 @@ msgstr "Dark Mode"
 msgid "Disconnect"
 msgstr "Disconnect"
 
-#: src/components/organisms/block-connection-status/block-connection-status.tsx:52
+#: src/components/organisms/block-connection-status/block-connection-status.tsx:57
 #: src/components/organisms/portal-block-number/index.tsx:38
 msgid "Disconnected"
 msgstr "Disconnected"
@@ -325,7 +325,7 @@ msgstr "Light Mode"
 msgid "Liquidity Pool"
 msgstr "Liquidity Pool"
 
-#: src/components/organisms/block-connection-status/block-connection-status.tsx:51
+#: src/components/organisms/block-connection-status/block-connection-status.tsx:56
 #: src/components/organisms/portal-block-number/index.tsx:37
 msgid "Login to your wallet to see block details"
 msgstr "Login to your wallet to see block details"
@@ -610,7 +610,7 @@ msgstr "Total supply"
 #~ msgid "Unstaked"
 #~ msgstr "Unstaked"
 
-#: src/components/organisms/block-connection-status/block-connection-status.tsx:45
+#: src/components/organisms/block-connection-status/block-connection-status.tsx:50
 #: src/components/organisms/portal-block-number/index.tsx:31
 msgid "View block details"
 msgstr "View block details"

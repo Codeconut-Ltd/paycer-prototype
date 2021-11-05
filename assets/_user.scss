@@ -36,3 +36,15 @@ main {
 a {
   text-decoration: none;
 }
+
+.portal-test {
+  z-index: 990;
+  background: rgba(0, 0, 0, 0.85);
+  border-radius: 0.25rem;
+  right: 1rem;
+  bottom: 1rem;
+  padding: 0.25rem 0.5rem;
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+}
