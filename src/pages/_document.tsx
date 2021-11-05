@@ -1,6 +1,6 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document'
 import { ServerStyleSheet } from 'styled-components'
-import { PortalRoot } from '../components/atoms/portal'
+import BlockConnectionStatus from '../components/organisms/block-connection-status/block-connection-status'
 
 export default class AppDocument extends Document {
   static async getInitialProps(ctx) {
@@ -46,7 +46,7 @@ export default class AppDocument extends Document {
         </Head>
         <body>
           <Main />
-          <PortalRoot />
+          <BlockConnectionStatus />
           <NextScript />
         </body>
       </Html>

@@ -122,8 +122,8 @@ msgstr "Connect to a wallet"
 #~ msgstr "Connect to wallet"
 
 #: src/components/organisms/portal-block-number/index.tsx:40
-msgid "Connected"
-msgstr "Connected"
+#~ msgid "Connected"
+#~ msgstr "Connected"
 
 #: src/components/organisms/web3/account-detail.tsx:92
 #~ msgid "Connected to wallet"
@@ -186,7 +186,8 @@ msgstr "Dark Mode"
 msgid "Disconnect"
 msgstr "Disconnect"
 
-#: src/components/organisms/portal-block-number/index.tsx:45
+#: src/components/organisms/block-connection-status/block-connection-status.tsx:52
+#: src/components/organisms/portal-block-number/index.tsx:38
 msgid "Disconnected"
 msgstr "Disconnected"
 
@@ -324,7 +325,8 @@ msgstr "Light Mode"
 msgid "Liquidity Pool"
 msgstr "Liquidity Pool"
 
-#: src/components/organisms/portal-block-number/index.tsx:44
+#: src/components/organisms/block-connection-status/block-connection-status.tsx:51
+#: src/components/organisms/portal-block-number/index.tsx:37
 msgid "Login to your wallet to see block details"
 msgstr "Login to your wallet to see block details"
 
@@ -551,10 +553,6 @@ msgstr "Switch wallet"
 #~ msgid "Switches to another wallet provider"
 #~ msgstr "Switches to another wallet provider"
 
-#: src/config/routes.ts:31
-msgid "Tests - DEV"
-msgstr "Tests - DEV"
-
 #: src/providers/connectors.ts:95
 msgid "The secure app to store crypto yourself"
 msgstr "The secure app to store crypto yourself"
@@ -612,7 +610,8 @@ msgstr "Total supply"
 #~ msgid "Unstaked"
 #~ msgstr "Unstaked"
 
-#: src/components/organisms/portal-block-number/index.tsx:38
+#: src/components/organisms/block-connection-status/block-connection-status.tsx:45
+#: src/components/organisms/portal-block-number/index.tsx:31
 msgid "View block details"
 msgstr "View block details"
 
