@@ -1,10 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styled from 'styled-components'
 import { t, Trans } from '@lingui/macro'
 import Button from '@components/atoms/button'
 import CurrencyIcon from '@components/atoms/currency-icon'
 import { FormattedNumber } from '@components/atoms/number/formatted-number'
 import DashNumber from '@components/organisms/dashboard/dash-number'
+import StakingRewardsModal from '@components/organisms/staking-rewards/staking-rewards-modal'
 import useStakingRewards from '@hooks/use-staking-rewards'
 import { rewardSymbol } from '@config/staking-rewards'
 
@@ -24,6 +25,7 @@ const HorizontalLine = styled.div`
 `
 
 export default function ClaimSummary() {
+  const [showStakingRewardsModal, setShowStakingRewardsModal] = useState(false)
   const stakingRewards = useStakingRewards()
   const rewardBalance = stakingRewards.rewardBalance()
   const lastClaimed = stakingRewards.lastClaimed()
@@ -35,6 +37,10 @@ export default function ClaimSummary() {
     } catch (e) {
       console.log(e)
     }
+  }
+
+  const onModalHide = () => {
+    setShowStakingRewardsModal(false)
   }
 
   return (
@@ -83,10 +89,14 @@ export default function ClaimSummary() {
           title={t`Apply`}
           variant={'primary'}
           className="px-5"
-          onClick={handleClaim}
+          onClick={() => setShowStakingRewardsModal(true)}
         >
           {t`Claim`}
         </Button>
+        <StakingRewardsModal
+          show={showStakingRewardsModal}
+          onHide={onModalHide}
+          />
       </div>
     </div>
   )
